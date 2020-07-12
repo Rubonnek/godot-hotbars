@@ -77,8 +77,8 @@ func lock(lock):
 	return
 	var p = get_parent()
 	if lock == true:
-		set_hidden(true)
+		set_visible(true)
 		p.set_columns(p.get_columns().size - 1)
 	else:
-		set_hidden(false)
+		set_visible(false)
 		p.set_columns(p.get_columns().size + 1)
